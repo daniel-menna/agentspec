@@ -1,0 +1,115 @@
+# BairesDev Brand Tokens — machine-readable companion to BRAND_GUIDELINES.md
+#
+# Values flagged `verified: false` were inferred from public rebrand coverage
+# because bairesdev.com, brandfetch.com, and the official brandbook PDF were
+# not reachable during extraction (HTTP 403). Replace with exact values from
+# the official brandbook when available.
+
+meta:
+  brand: BairesDev
+  version: 0.1.0-draft
+  last_updated: 2026-04-16
+  source_of_truth: https://bairesdev.mo.cloudinary.net/blog/editorial/rebranding_pdf_brandbook_summary.pdf
+  notes: |
+    Rebrand launched 2023, campaign "We Are Here". Primary hue shifted from
+    historic blue to orange. Logo = two semicircles. Identity emphasizes
+    movement and a geometric shape system.
+
+color:
+  primary:
+    name: BairesDev Orange
+    hex: "#F26B21"
+    rgb: [242, 107, 33]
+    verified: false
+  ink:
+    name: Ink
+    hex: "#0E0E0E"
+    rgb: [14, 14, 14]
+    verified: false
+  paper:
+    name: Paper
+    hex: "#FFFFFF"
+    rgb: [255, 255, 255]
+    verified: true
+  accent:
+    blue:
+      name: Signal Blue
+      hex: "#1E5FEA"
+      rgb: [30, 95, 234]
+      verified: false
+    yellow:
+      name: Sun Yellow
+      hex: "#F7C948"
+      rgb: [247, 201, 72]
+      verified: false
+    green:
+      name: Growth Green
+      hex: "#00A86B"
+      rgb: [0, 168, 107]
+      verified: false
+  neutral:
+    "050": "#FAFAFA"
+    "100": "#F3F4F6"
+    "200": "#E5E7EB"
+    "400": "#9CA3AF"
+    "600": "#4B5563"
+    "800": "#1F2937"
+    "950": "#0E0E0E"
+
+typography:
+  display:
+    family: Inter
+    fallback: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+    weights: [700, 800, 900]
+    tracking: "-0.02em"
+    verified: false
+  body:
+    family: Inter
+    fallback: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+    weights: [400, 500, 600]
+    tracking: "0"
+    verified: false
+  mono:
+    family: JetBrains Mono
+    fallback: "ui-monospace, Menlo, Consolas, monospace"
+    weights: [400, 500]
+    verified: false
+  scale:
+    display_xl: { size_px: 64, line_height: 1.05, weight: 800 }
+    display_lg: { size_px: 48, line_height: 1.10, weight: 700 }
+    heading_1:  { size_px: 32, line_height: 1.20, weight: 700 }
+    heading_2:  { size_px: 24, line_height: 1.25, weight: 600 }
+    heading_3:  { size_px: 20, line_height: 1.30, weight: 600 }
+    body_lg:    { size_px: 18, line_height: 1.55, weight: 400 }
+    body:       { size_px: 16, line_height: 1.60, weight: 400 }
+    body_sm:    { size_px: 14, line_height: 1.50, weight: 400 }
+    mono:       { size_px: 14, line_height: 1.50, weight: 500 }
+
+logo:
+  mark: two_semicircles
+  meaning: partnership (us + clients, company + people)
+  clear_space: one_semicircle_height
+  min_size_px: 24
+  min_size_mm: 12
+  color_modes: [orange_on_paper, paper_on_ink, ink_on_paper]
+  sources:
+    - https://brandfetch.com/bairesdev.com
+    - https://seeklogo.com/vector-logo/505439/bairesdev
+
+visual_system:
+  shapes: [circle, semicircle, rounded_rectangle]
+  principle: motion — elements affect each other
+  photography: real people, natural light, candid
+  iconography:
+    style: geometric rounded
+    stroke_px: 2
+
+usage_rules:
+  color_ratio: "60% neutrals / 30% orange / 10% accent"
+  max_accents_per_view: 2
+  body_copy_color: ink
+  never:
+    - body copy set in orange
+    - all-caps headlines
+    - more than two weights in a heading hierarchy
+    - recoloring the logo outside brand palette
